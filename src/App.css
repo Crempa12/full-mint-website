@@ -1,0 +1,37 @@
+@import url("https:fonts.googleapis.com/css?family=Press+Start+2p");
+@import url("https://db.onlinewebfonts.com/c/294629fdbf28fa0a2d3e70432b07581b?family=Austin+News+Deck+Web+Medium");
+
+.App {
+  text-align: center;
+  font-family:"Press Start 2P,Austin News Deck Web Medium";
+  color: black;
+  font-size: large;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+.overlay{
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position:fixed;
+}
+.background{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("A:\Eth Mint\full-mint-website\src\assets\background\parallax-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: 40%,40%;
+}
