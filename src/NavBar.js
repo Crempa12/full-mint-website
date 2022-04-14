@@ -40,9 +40,10 @@ const NavBar = ({accounts, setAccounts}) =>{
                 <Spacer />
                 <Spacer />
                 <Spacer />
+             
             <Box margin="0 15px">About</Box>
             <Spacer />
-            <Box margin="0 15px">Mint</Box>          
+            <Box margin="0 15px"><a href = 'App.js'>Mint</a></Box>          
             <Spacer /> 
             <Box margin="0 15px">Team</Box>
             <Spacer />

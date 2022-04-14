@@ -7,6 +7,12 @@
   color: black;
   font-size: large;
 }
+.home {
+  text-align: center;
+  font-family:"Press Start 2P,Austin News Deck Web Medium";
+  color: black;
+  font-size: large;
+}
 *{
   box-sizing: border-box;
 }
