@@ -43,9 +43,9 @@ const NavBar = ({accounts, setAccounts}) =>{
              
             <Box margin="0 15px">About</Box>
             <Spacer />
-            <Box margin="0 15px"><a href = 'App.js'>Mint</a></Box>          
+            <Box margin="0 15px"><a href = 'Kayhan is a'>Mint</a></Box>          
             <Spacer /> 
-            <Box margin="0 15px">Team</Box>
+            <Box margin="0 15px">Projects</Box>
             <Spacer />
              {/*connected? */}
              {isConnected ? (

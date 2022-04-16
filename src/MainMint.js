@@ -4,7 +4,8 @@ import BrewstersNFT from './BrewstersNFT.json';
 import {Box, Button, Flex, Input, Text} from '@chakra-ui/react';
 
 
-const BrewstersNFTAddress="0x1309c6C6Ef7932A614eD98Ccfe986b358e9fc8a3";
+const BrewstersNFTAddress="0x2CA735473210b5C0049A01DF086AA67Eef99cf80";
+
 
 const MainMint = ({accounts,setAccounts}) => {
     const [mintAmount, setMintAmount] = useState(1);
