@@ -35,7 +35,7 @@ contract BrewstersNFT is ERC721, Ownable{
         return string(abi.encodePacked(baseTokenUri,Strings.toString(tokenId_),".json"));
     }
     function withdraw()external onlyOwner{
-        (bool success, ) = withdrawWallet.call{ value: address(this).balance }('0xF9eDEA67d67342dE191FcB6003f93838Db086DcB');
+        (bool success, ) = withdrawWallet.call{ value: address(this).balance }('');
         require(success, 'withdraw failed');
     }
 

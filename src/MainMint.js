@@ -39,12 +39,12 @@ const MainMint = ({accounts,setAccounts}) => {
     return (
         <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
             <Box width="520px">
-            <Text fontSize="48px" textShadow = "0 px #000000">Brewster&#38;Co.</Text>
+            <Text fontSize="48px" textShadow = "0 px #000000" color='white'>Brewster&#38;Co.</Text>
             <Text
             fontSize="30px"
             fontFamily= "Press Start 2P"
             letterSpacing="-5.5%"
-            textShadow="0 2px 2px #000000">The Finer Things</Text>
+            textShadow="0 2px 2px #000000" color='white'>The Finer Things</Text>
             {isConnected ?(
                 <div>
                     <div>
@@ -91,7 +91,7 @@ const MainMint = ({accounts,setAccounts}) => {
                 onClick={handleMint}>Mint Now</Button>
                 </div>
             ) : (
-                <p>You must be connected to Mint.</p>
+                <Text color='white'>You must be connected to Mint.</Text>
             )}
             </Box>
         </Flex>

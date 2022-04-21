@@ -1,14 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Home from './Home'
-import App from './App'
-import MainMint from './MainMint';
-import NavBar from './NavBar';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import { render } from "react-dom";
+import App from "./routes/App";
+import Home from './routes/Home'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
+const rootElement = document.getElementById("root");
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="Mint" element={<App />} />
+    </Routes>
+  </BrowserRouter>,
+  rootElement
 );

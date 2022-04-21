@@ -3,13 +3,13 @@
 
 .App {
   text-align: center;
-  font-family:"Press Start 2P,Austin News Deck Web Medium";
+  font-family:"Austin News Deck Web Medium";
   color: black;
   font-size: large;
 }
 .home {
   text-align: center;
-  font-family:"Press Start 2P,Austin News Deck Web Medium";
+  font-family:"Austin News Deck Web Medium";
   color: black;
   font-size: large;
 }
@@ -35,7 +35,8 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("A:\Eth Mint\full-mint-website\src\assets\background\parallax-bg.jpg");
+  /* background-image: url("A:\Eth Mint\full-mint-website\src\assets\background\Peen.png"); */
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: unset;

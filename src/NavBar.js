@@ -6,7 +6,9 @@ import Email from "./assets/social-media-icons/email_32x32.png";
 
 const NavBar = ({accounts, setAccounts}) =>{
     const isConnected = Boolean(accounts[0]);
-
+    async function mintSwitch(){
+        window.location.href = "Mint"
+    }
 
         async function connectAccount(){
         if(window.ethereum){
@@ -15,6 +17,7 @@ const NavBar = ({accounts, setAccounts}) =>{
             });
             setAccounts(accounts);
         }
+       
     }
     return(
         <Flex justify="space-between" align="center" padding="30px">
@@ -41,15 +44,28 @@ const NavBar = ({accounts, setAccounts}) =>{
                 <Spacer />
                 <Spacer />
              
-            <Box margin="0 15px">About</Box>
+            <Box margin="0 15px" color='white'>About</Box>
             <Spacer />
-            <Box margin="0 15px"><a href = 'Kayhan is a'>Mint</a></Box>          
+            
+            <Box margin="0 15px" color='white'><Button
+             backgroundColor = "#D6517D"
+             borderRadius = "5px"
+             boxShadow="0px 2px 2px 1px #0F0F0F"
+             color="white"
+             cursor="pointer"
+             fontFamily="inherit"
+             padding = "px"
+             margin = "0px"
+             width="100px"
+             onClick = {mintSwitch} >
+               Mint
+                </Button></Box>          
             <Spacer /> 
-            <Box margin="0 15px">Projects</Box>
+            <Box margin="0 15px" color='white'>Projects</Box>
             <Spacer />
              {/*connected? */}
              {isConnected ? (
-                <Box margin="0 15px">Connected</Box>
+                <Box margin="0 15px" color='white'>Connected</Box>
             ):(
                 <Button 
                 backgroundColor = "#D6517D"
