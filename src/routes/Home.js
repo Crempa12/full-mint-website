@@ -5,7 +5,7 @@ import {Box,  Button,  Flex, Text} from '@chakra-ui/react';
 
 function Home(){
     const [accounts,setAccounts] = useState([]);
-    
+  
     return (
       
       <div className='overlay'>
@@ -24,7 +24,9 @@ function Home(){
             fontFamily= "Press Start 2P"
             letterSpacing="-5.5%"
             textShadow="0 2px 2px #000000" color='white'>the newer way of art</Text>
-
+             <Text color = 'white' id="myDIV">Hello</Text>
+             <Button class="button" onClick ="myFunction()" ></Button>
+           
      
       </Box>
 
